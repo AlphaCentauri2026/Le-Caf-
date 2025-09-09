@@ -1,0 +1,14 @@
+[
+  { "name": "Espresso", "description": "Rich and bold, freshly pulled shot.", "price": "$3" },
+  { "name": "Cappuccino", "description": "Espresso with steamed milk and foam.", "price": "$4.50" },
+  { "name": "Latte", "description": "Smooth blend of espresso and steamed milk.", "price": "$4.75" },
+  { "name": "Croissant", "description": "Flaky, buttery pastry baked fresh daily.", "price": "$3.25" },
+  { "name": "Muffin", "description": "Blueberry, chocolate, or seasonal flavors.", "price": "$2.95" }
+]
+
+
+
+
+
+
+
