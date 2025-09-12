@@ -6,9 +6,9 @@ import GlassCard from './GlassCard';
 const Testimonials = () => {
   // Map testimonials to customer images
   const testimonialImages = [
-    "/images/Happy_customer_smiling_with_a_cup_of_coffee_1.jpg",
-    "/images/Happy_customer_smiling_with_a_cup_of_coffee_2.jpg",
-    "/images/Happy_customer_smiling_with_a_cup_of_coffee_3.jpg"
+    "/Le Café images/pexels-bianca-gasparoto-834990-1752806.jpg",
+    "/Le Café images/pexels-chevanon-324028.jpg",
+    "/Le Café images/pexels-jayoke-851555.jpg"
   ];
 
   return (
@@ -16,7 +16,7 @@ const Testimonials = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/Friends_laughing_together_at_a_caf_table_st_1.jpg"
+          src="/Le Café images/pexels-orlovamaria-4947415.jpg"
           alt="Happy customers background"
           fill
           className="object-cover"
@@ -61,6 +61,7 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
 
 
 

@@ -9,7 +9,7 @@ const About = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/Cozy_caf_interior_with_rustic_wooden_tables_c_1.jpg"
+          src="/Le Café images/pexels-igor-haritanovich-814387-1695052.jpg"
           alt="Cozy cafe interior background"
           fill
           className="object-cover"
@@ -40,12 +40,12 @@ const About = () => {
           <div className="animate-slide-in-right">
             <div className="grid grid-cols-1 gap-6">
               <GlassCard
-                imageSrc="/images/Wideangle_shot_of_caf_interior_with_cozy_se_1.jpg"
+                imageSrc="/Le Café images/pexels-pavel-danilyuk-6612661.jpg"
                 title="Our Space"
                 description="A warm and inviting atmosphere perfect for any occasion"
               />
               <GlassCard
-                imageSrc="/images/Cozy_caf_interior_with_rustic_wooden_tables_c_2.jpg"
+                imageSrc="/Le Café images/pexels-roman-odintsov-5836516.jpg"
                 title="Rustic Charm"
                 description="Authentic wooden tables and cozy seating arrangements"
               />
@@ -58,6 +58,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 

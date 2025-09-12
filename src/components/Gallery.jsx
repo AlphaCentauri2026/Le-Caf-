@@ -7,55 +7,55 @@ const Gallery = () => {
     {
       id: 1,
       title: "Cozy Interior",
-      image: "/images/Wideangle_shot_of_caf_interior_with_cozy_se_0.jpg",
+      image: "/Le Café images/pexels-igor-haritanovich-814387-1695052.jpg",
       description: "Our warm and inviting cafe space"
     },
     {
       id: 2,
       title: "Fresh Brew",
-      image: "/images/Smiling_barista_behind_an_espresso_machine_0.jpg",
+      image: "/Le Café images/pexels-shkrabaanthony-6281459.jpg",
       description: "Expert baristas crafting perfect espresso"
     },
     {
       id: 3,
       title: "Morning Light",
-      image: "/images/Exterior_of_a_charming_caf_with_outdoor_sea_0.jpg",
+      image: "/Le Café images/pexels-pavel-danilyuk-6612573.jpg",
       description: "Beautiful outdoor seating area"
     },
     {
       id: 4,
       title: "Artisan Pastries",
-      image: "/images/Flat_lay_of_caf_menu_items_latte_muffins_an_2.jpg",
+      image: "/Le Café images/pexels-ketut-subiyanto-4350068.jpg",
       description: "Freshly baked goods made daily"
     },
     {
       id: 5,
       title: "Coffee Beans",
-      image: "/images/Closeup_of_roasted_coffee_beans_spilling_fr_0.jpg",
+      image: "/Le Café images/pexels-orlovamaria-4946715.jpg",
       description: "Premium roasted coffee beans"
     },
     {
       id: 6,
       title: "Community Space",
-      image: "/images/Friends_laughing_together_at_a_caf_table_st_0.jpg",
+      image: "/Le Café images/pexels-orlovamaria-4947415.jpg",
       description: "Where friends and memories are made"
     },
     {
       id: 7,
       title: "Latte Art",
-      image: "/images/Closeup_of_latte_art_in_a_ceramic_cup_on_a_1.jpg",
+      image: "/Le Café images/pexels-natri-129207.jpg",
       description: "Beautiful latte art in every cup"
     },
     {
       id: 8,
       title: "Outdoor Seating",
-      image: "/images/Outdoor_caf_seating_with_people_enjoying_co_0.jpg",
+      image: "/Le Café images/pexels-pavel-danilyuk-6612575.jpg",
       description: "Perfect spot for people watching"
     },
     {
       id: 9,
       title: "Happy Customers",
-      image: "/images/Happy_customer_smiling_with_a_cup_of_coffee_0.jpg",
+      image: "/Le Café images/pexels-bianca-gasparoto-834990-1752806.jpg",
       description: "Satisfied customers enjoying their coffee"
     }
   ];
@@ -110,6 +110,7 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
 
 
 

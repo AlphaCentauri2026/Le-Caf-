@@ -11,7 +11,7 @@ const AboutPage = () => {
       {/* Header */}
       <header className="relative h-64 overflow-hidden pt-16">
         <Image
-          src="/images/Wideangle_shot_of_caf_interior_with_cozy_se_2.jpg"
+          src="/Le Café images/pexels-igor-haritanovich-814387-1695052.jpg"
           alt="Cafe interior"
           fill
           className="object-cover"
@@ -45,7 +45,7 @@ const AboutPage = () => {
                 </div>
                 <div className="grid grid-cols-1 gap-4">
                   <GlassCard
-                    imageSrc="/images/Cozy_caf_interior_with_rustic_wooden_tables_c_3.jpg"
+                    imageSrc="/Le Café images/pexels-roman-odintsov-5836516.jpg"
                     title="Our Space"
                     description="A warm and inviting atmosphere perfect for any occasion"
                   >
@@ -59,7 +59,7 @@ const AboutPage = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="animate-fade-in-up">
               <GlassCard
-                imageSrc="/images/Closeup_of_roasted_coffee_beans_spilling_fr_1.jpg"
+                imageSrc="/Le Café images/pexels-orlovamaria-4946715.jpg"
                 title="Premium Beans"
                 description="Carefully sourced and expertly roasted coffee beans from around the world"
               >
@@ -67,7 +67,7 @@ const AboutPage = () => {
             </div>
             <div className="animate-fade-in-up delay-300">
               <GlassCard
-                imageSrc="/images/Smiling_barista_behind_an_espresso_machine_1.jpg"
+                imageSrc="/Le Café images/pexels-shkrabaanthony-6281459.jpg"
                 title="Expert Baristas"
                 description="Our skilled baristas craft each drink with passion and precision"
               >
@@ -75,7 +75,7 @@ const AboutPage = () => {
             </div>
             <div className="animate-fade-in-up delay-500">
               <GlassCard
-                imageSrc="/images/Friends_laughing_together_at_a_caf_table_st_2.jpg"
+                imageSrc="/Le Café images/pexels-orlovamaria-4947415.jpg"
                 title="Community Focus"
                 description="A welcoming space where friendships are made and memories created"
               >
@@ -104,7 +104,7 @@ const AboutPage = () => {
               </div>
               <div>
                 <GlassCard
-                  imageSrc="/images/Exterior_of_a_charming_caf_with_outdoor_sea_1.jpg"
+                  imageSrc="/Le Café images/pexels-pavel-danilyuk-6612573.jpg"
                   title="Find Us"
                   description="Located in the heart of Long Island, easily accessible and perfect for a quick stop or a leisurely visit"
                 >

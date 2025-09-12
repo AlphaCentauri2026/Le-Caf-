@@ -43,7 +43,7 @@ const Footer = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/Exterior_of_a_charming_caf_with_outdoor_sea_2.jpg"
+          src="/Le Café images/pexels-pavel-danilyuk-6612575.jpg"
           alt="Cafe exterior background"
           fill
           className="object-cover"
@@ -228,6 +228,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 

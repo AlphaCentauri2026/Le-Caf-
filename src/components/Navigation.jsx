@@ -34,25 +34,25 @@ const Navigation = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link
                 href="/"
-                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:scale-105"
+                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-lg font-bold transition-all duration-300 hover:bg-white/10 hover:scale-105"
               >
                 Home
               </Link>
               <Link
                 href="/menu"
-                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:scale-105"
+                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-lg font-bold transition-all duration-300 hover:bg-white/10 hover:scale-105"
               >
                 Menu
               </Link>
               <Link
                 href="/about"
-                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:scale-105"
+                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-lg font-bold transition-all duration-300 hover:bg-white/10 hover:scale-105"
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:scale-105"
+                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-lg font-bold transition-all duration-300 hover:bg-white/10 hover:scale-105"
               >
                 Contact
               </Link>
@@ -118,35 +118,35 @@ const Navigation = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             href="/"
-            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:bg-white/10"
+            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-xl font-bold transition-all duration-300 hover:bg-white/10"
             onClick={closeMenu}
           >
             Home
           </Link>
           <Link
             href="/menu"
-            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:bg-white/10"
+            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-xl font-bold transition-all duration-300 hover:bg-white/10"
             onClick={closeMenu}
           >
             Menu
           </Link>
           <Link
             href="/about"
-            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:bg-white/10"
+            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-xl font-bold transition-all duration-300 hover:bg-white/10"
             onClick={closeMenu}
           >
             About
           </Link>
           <Link
             href="/contact"
-            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:bg-white/10"
+            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-xl font-bold transition-all duration-300 hover:bg-white/10"
             onClick={closeMenu}
           >
             Contact
           </Link>
           <div className="pt-4 pb-2">
             <Link href="/menu" onClick={closeMenu}>
-              <button className="w-full bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 shadow-lg backdrop-blur-sm border border-white/20">
+              <button className="w-full bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg text-lg font-bold transition-all duration-300 shadow-lg backdrop-blur-sm border border-white/20">
                 Order Now
               </button>
             </Link>

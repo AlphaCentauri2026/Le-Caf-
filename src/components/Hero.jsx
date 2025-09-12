@@ -10,23 +10,23 @@ const Hero = () => {
 
   const slides = [
     {
-      image: "/images/Wideangle_shot_of_caf_interior_with_cozy_se_3.jpg",
+      image: "/Le Café images/pexels-pavel-danilyuk-6612661.jpg",
       alt: "Cozy cafe interior with warm lighting"
     },
     {
-      image: "/images/Smiling_barista_behind_an_espresso_machine_0.jpg",
+      image: "/Le Café images/pexels-shkrabaanthony-6281459.jpg",
       alt: "Expert barista crafting perfect espresso"
     },
     {
-      image: "/images/Friends_laughing_together_at_a_caf_table_st_0.jpg",
+      image: "/Le Café images/pexels-orlovamaria-4947415.jpg",
       alt: "Friends enjoying coffee together"
     },
     {
-      image: "/images/Exterior_of_a_charming_caf_with_outdoor_sea_0.jpg",
+      image: "/Le Café images/pexels-pavel-danilyuk-6612573.jpg",
       alt: "Beautiful outdoor cafe seating"
     },
     {
-      image: "/images/Closeup_of_roasted_coffee_beans_spilling_fr_0.jpg",
+      image: "/Le Café images/pexels-orlovamaria-4946715.jpg",
       alt: "Premium roasted coffee beans"
     }
   ];
@@ -121,6 +121,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 

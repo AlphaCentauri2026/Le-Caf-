@@ -6,11 +6,11 @@ import GlassCard from './GlassCard';
 const Menu = () => {
   // Map menu items to appropriate images
   const menuImages = {
-    "Espresso": "/images/Closeup_of_latte_art_in_a_ceramic_cup_on_a_0.jpg",
-    "Cappuccino": "/images/Barista_serving_cappuccino_in_a_ceramic_cup_0.jpg",
-    "Latte": "/images/Topdown_view_of_caf_table_with_cappuccino_c_0.jpg",
-    "Croissant": "/images/Flat_lay_of_caf_menu_items_latte_muffins_an_0.jpg",
-    "Muffin": "/images/Flat_lay_of_caf_menu_items_latte_muffins_an_1.jpg"
+    "Espresso": "/Le Café images/pexels-natri-129207.jpg",
+    "Cappuccino": "/Le Café images/pexels-juanpphotoandvideo-894695.jpg",
+    "Latte": "/Le Café images/pexels-pixabay-414630.jpg",
+    "Croissant": "/Le Café images/pexels-ketut-subiyanto-4350068.jpg",
+    "Muffin": "/Le Café images/pexels-ketut-subiyanto-4350068.jpg"
   };
 
   return (
@@ -18,7 +18,7 @@ const Menu = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/Cozy_caf_interior_with_rustic_wooden_tables_c_0.jpg"
+          src="/Le Café images/pexels-roman-odintsov-5836516.jpg"
           alt="Cozy cafe interior background"
           fill
           className="object-cover"
@@ -65,6 +65,7 @@ const Menu = () => {
 };
 
 export default Menu;
+
 
 
 

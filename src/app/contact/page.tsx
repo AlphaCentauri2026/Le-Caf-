@@ -11,7 +11,7 @@ const ContactPage = () => {
       {/* Header */}
       <header className="relative h-64 overflow-hidden pt-16">
         <Image
-          src="/images/Mapstyle_aerial_view_of_a_caf_building_on_a_0.jpg"
+          src="/Le Café images/pexels-pavel-danilyuk-6612573.jpg"
           alt="Cafe location"
           fill
           className="object-cover"
@@ -69,7 +69,7 @@ const ContactPage = () => {
             {/* Contact Information */}
             <div className="space-y-6 animate-slide-in-right">
               <GlassCard
-                imageSrc="/images/Exterior_of_a_charming_caf_with_outdoor_sea_3.jpg"
+                imageSrc="/Le Café images/pexels-pavel-danilyuk-6612575.jpg"
                 title="Visit Our Location"
                 description={companyData.contact.address}
               >
@@ -126,7 +126,7 @@ const ContactPage = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <GlassCard
-                  imageSrc="/images/Mapstyle_aerial_view_of_a_caf_building_on_a_1.jpg"
+                  imageSrc="/Le Café images/pexels-pavel-danilyuk-6612573.jpg"
                   title="Location Overview"
                   description="Our cafe is conveniently located in the heart of Long Island, easily accessible by car or public transportation."
                 >
