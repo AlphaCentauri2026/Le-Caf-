@@ -14,50 +14,55 @@ const Menu = () => {
   };
 
   return (
-    <section className="relative py-20 px-4 overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/Le Café images/pexels-roman-odintsov-5836516.jpg"
-          alt="Cozy cafe interior background"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/60" />
-      </div>
-
-      <div className="relative z-10 max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-8 inline-block shadow-2xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-2xl">
-              Our Menu
-            </h2>
-            <p className="text-xl text-white/90 drop-shadow-lg">
-              Freshly brewed coffee and baked goods made with love every day
-            </p>
-          </div>
+    <section className="relative section-spacing px-6 bg-white">
+      <div className="content-max-width mx-auto">
+        <div className="text-center mb-20 animate-fade-in-up">
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 readable-text">
+            Our Menu
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto readable-text leading-relaxed">
+            Freshly brewed coffee and baked goods made with love every day
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
           {menuData.map((item, index) => (
-            <div key={index} className="animate-fade-in-up" style={{animationDelay: `${index * 0.2}s`}}>
+            <div key={index} className="animate-fade-in-up" style={{animationDelay: `${index * 0.15}s`}}>
               <GlassCard
                 imageSrc={menuImages[item.name]}
                 title={item.name}
                 description={item.description}
+                variant="clean"
                 className="h-full"
               >
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-bold text-amber-400 drop-shadow-lg">
+                <div className="flex justify-between items-center mb-6">
+                  <span className="text-3xl font-bold text-amber-600">
                     {item.price}
                   </span>
                 </div>
-                <button className="w-full bg-amber-600/90 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 backdrop-blur-sm border border-white/20">
+                <button className="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-lg">
                   Add to Order
                 </button>
               </GlassCard>
             </div>
           ))}
+        </div>
+
+        {/* Special Offers Section */}
+        <div className="mt-24 text-center">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200/50 rounded-3xl p-12 max-w-4xl mx-auto shadow-xl">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8">Special Offers</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white/80 backdrop-blur-sm border border-amber-200/50 rounded-2xl p-8 shadow-lg">
+                <h4 className="text-2xl font-bold text-gray-900 mb-3">Coffee of the Month</h4>
+                <p className="text-gray-700 readable-text">Try our seasonal Ethiopian blend - $2 off this month!</p>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm border border-green-200/50 rounded-2xl p-8 shadow-lg">
+                <h4 className="text-2xl font-bold text-gray-900 mb-3">Loyalty Program</h4>
+                <p className="text-gray-700 readable-text">Buy 5 coffees, get your 6th free!</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

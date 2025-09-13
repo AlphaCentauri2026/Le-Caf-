@@ -39,25 +39,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/Le Café images/pexels-pavel-danilyuk-6612575.jpg"
-          alt="Cafe exterior background"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/70" />
-      </div>
-
-      {/* Floating Coffee Beans Animation */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
-        <div className="absolute top-10 left-10 animate-float opacity-20">🫘</div>
-        <div className="absolute top-20 right-20 animate-float delay-1000 opacity-15">☕</div>
-        <div className="absolute bottom-20 left-20 animate-float delay-2000 opacity-10">🥐</div>
-        <div className="absolute bottom-10 right-10 animate-float delay-3000 opacity-20">🫘</div>
-      </div>
+    <footer className="relative overflow-hidden bg-gray-900">
 
       <div className="relative z-20 py-16 px-4">
         {/* Newsletter Section */}

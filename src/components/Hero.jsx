@@ -43,60 +43,30 @@ const Hero = () => {
     <>
       <Navigation />
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-        {/* Rotating Background Images */}
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 z-0 transition-opacity duration-1000 ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <Image
-              src={slide.image}
-              alt={slide.alt}
-              fill
-              className="object-cover"
-              priority={index === 0}
-            />
-            <div className="absolute inset-0 bg-black/40" />
-          </div>
-        ))}
+        {/* Clean Background Gradient */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-amber-100 via-orange-50 to-amber-200"></div>
 
-        {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
-          {slides.map((_, index) => (
-            <div
-              key={index}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide
-                  ? 'bg-amber-400 scale-125'
-                  : 'bg-white/50 hover:bg-white/75'
-              }`}
-            />
-          ))}
-        </div>
-
-        {/* Glass Card Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-4 animate-fade-in-up">
-          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-8 md:p-12 shadow-2xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl animate-slide-in-left">
+        {/* Clean Content */}
+        <div className="relative z-10 content-max-width mx-auto text-center px-6 animate-fade-in-up">
+          <div className="bg-white/95 backdrop-blur-sm border border-white/50 rounded-3xl p-12 md:p-16 shadow-2xl">
+            <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-8 animate-slide-in-left readable-text">
               Le Café
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-lg animate-slide-in-right">
+            <p className="text-2xl md:text-3xl text-gray-700 mb-10 max-w-3xl mx-auto animate-slide-in-right readable-text font-light">
               Where Every Cup Tells a Story
             </p>
-            <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto drop-shadow-md animate-fade-in-up delay-300">
+            <p className="text-xl text-gray-600 mb-16 max-w-4xl mx-auto animate-fade-in-up delay-300 readable-text leading-relaxed">
               Experience the perfect blend of artisanal coffee, freshly baked pastries,
               and warm hospitality in our cozy neighborhood café.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-500">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up delay-500">
               <Link href="/menu">
-                <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 backdrop-blur-sm border border-white/20">
+                <button className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 text-lg">
                   Order Online
                 </button>
               </Link>
               <Link href="/menu">
-                <button className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded-lg border-2 border-white/30 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 backdrop-blur-sm">
+                <button className="bg-white hover:bg-gray-50 text-gray-900 font-bold py-4 px-10 rounded-xl border-2 border-gray-300 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 text-lg">
                   View Menu
                 </button>
               </Link>

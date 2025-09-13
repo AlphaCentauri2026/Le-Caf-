@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import companyData from '../../data/company.json';
 import GlassCard from '../../components/GlassCard';
 import Navigation from '../../components/Navigation';
@@ -9,57 +8,50 @@ const ContactPage = () => {
     <div className="min-h-screen">
       <Navigation />
       {/* Header */}
-      <header className="relative h-64 overflow-hidden pt-16">
-        <Image
-          src="/Le Café images/pexels-pavel-danilyuk-6612573.jpg"
-          alt="Cafe location"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="text-center text-white">
-            <h1 className="text-5xl font-bold mb-4 drop-shadow-2xl">Contact Us</h1>
-            <p className="text-xl drop-shadow-lg">We&apos;d love to hear from you</p>
+      <header className="relative py-24 overflow-hidden bg-gradient-to-br from-amber-100 via-orange-50 to-amber-200">
+        <div className="content-max-width mx-auto px-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-6xl md:text-7xl font-bold mb-6 text-gray-900 readable-text">Contact Us</h1>
+            <p className="text-2xl text-gray-700 readable-text">We&apos;d love to hear from you</p>
           </div>
         </div>
       </header>
 
       {/* Contact Content */}
-      <section className="relative py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
+      <section className="relative section-spacing px-6 bg-white">
+        <div className="content-max-width mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 mb-20">
             {/* Contact Form */}
-            <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl animate-slide-in-left">
-              <h2 className="text-3xl font-bold text-white mb-6 drop-shadow-2xl">Get In Touch</h2>
-              <form className="space-y-6">
+            <div className="clean-card animate-slide-in-left p-10">
+              <h2 className="text-4xl font-bold text-gray-900 mb-8 readable-text">Get In Touch</h2>
+              <form className="space-y-8">
                 <div>
-                  <label className="block text-white/90 font-medium mb-2 drop-shadow-md">Name</label>
+                  <label className="block text-gray-700 font-semibold mb-3 text-lg">Name</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+                    className="w-full px-6 py-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-lg transition-all duration-300"
                     placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label className="block text-white/90 font-medium mb-2 drop-shadow-md">Email</label>
+                  <label className="block text-gray-700 font-semibold mb-3 text-lg">Email</label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+                    className="w-full px-6 py-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-lg transition-all duration-300"
                     placeholder="your.email@example.com"
                   />
                 </div>
                 <div>
-                  <label className="block text-white/90 font-medium mb-2 drop-shadow-md">Message</label>
+                  <label className="block text-gray-700 font-semibold mb-3 text-lg">Message</label>
                   <textarea
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+                    rows={6}
+                    className="w-full px-6 py-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-lg transition-all duration-300 resize-none"
                     placeholder="Tell us how we can help..."
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 backdrop-blur-sm border border-white/20"
+                  className="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-xl"
                 >
                   Send Message
                 </button>
@@ -67,53 +59,54 @@ const ContactPage = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-6 animate-slide-in-right">
+            <div className="space-y-8 animate-slide-in-right">
               <GlassCard
                 imageSrc="/Le Café images/pexels-pavel-danilyuk-6612575.jpg"
                 title="Visit Our Location"
                 description={companyData.contact.address}
+                variant="clean"
               >
-                <div className="mt-4 space-y-2 text-white/90 drop-shadow-md">
-                  <p className="flex items-center">
-                    <span className="mr-2">📞</span>
-                    {companyData.contact.phone}
+                <div className="mt-6 space-y-4 text-gray-700 readable-text">
+                  <p className="flex items-center space-x-3">
+                    <span className="text-2xl">📞</span>
+                    <span className="text-lg">{companyData.contact.phone}</span>
                   </p>
-                  <p className="flex items-center">
-                    <span className="mr-2">✉️</span>
-                    {companyData.contact.email}
+                  <p className="flex items-center space-x-3">
+                    <span className="text-2xl">✉️</span>
+                    <span className="text-lg">{companyData.contact.email}</span>
                   </p>
                 </div>
               </GlassCard>
 
-              <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6 shadow-2xl">
-                <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-2xl">Business Hours</h3>
-                <div className="space-y-2 text-white/90 drop-shadow-md">
-                  <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>6:00 AM - 8:00 PM</span>
+              <div className="clean-card p-8">
+                <h3 className="text-3xl font-bold text-gray-900 mb-6">Business Hours</h3>
+                <div className="space-y-4 text-gray-700 readable-text">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-semibold text-lg">Monday - Friday</span>
+                    <span className="text-lg">6:00 AM - 8:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Saturday</span>
-                    <span>7:00 AM - 9:00 PM</span>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-semibold text-lg">Saturday</span>
+                    <span className="text-lg">7:00 AM - 9:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Sunday</span>
-                    <span>7:00 AM - 9:00 PM</span>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="font-semibold text-lg">Sunday</span>
+                    <span className="text-lg">7:00 AM - 9:00 PM</span>
                   </div>
                 </div>
               </div>
 
-              <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6 shadow-2xl">
-                <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-2xl">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <a href="#" className="text-white/80 hover:text-amber-400 transition-all duration-300 hover:scale-110 drop-shadow-md">
-                    📘 Facebook
+              <div className="clean-card p-8">
+                <h3 className="text-3xl font-bold text-gray-900 mb-6">Follow Us</h3>
+                <div className="flex space-x-8">
+                  <a href="#" className="text-gray-600 hover:text-amber-600 transition-all duration-300 hover:scale-110 text-3xl">
+                    📘
                   </a>
-                  <a href="#" className="text-white/80 hover:text-amber-400 transition-all duration-300 hover:scale-110 drop-shadow-md">
-                    📷 Instagram
+                  <a href="#" className="text-gray-600 hover:text-amber-600 transition-all duration-300 hover:scale-110 text-3xl">
+                    📷
                   </a>
-                  <a href="#" className="text-white/80 hover:text-amber-400 transition-all duration-300 hover:scale-110 drop-shadow-md">
-                    🎵 TikTok
+                  <a href="#" className="text-gray-600 hover:text-amber-600 transition-all duration-300 hover:scale-110 text-3xl">
+                    🎵
                   </a>
                 </div>
               </div>
@@ -121,28 +114,42 @@ const ContactPage = () => {
           </div>
 
           {/* Map Section */}
-          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl">
-            <h2 className="text-3xl font-bold text-white mb-6 drop-shadow-2xl text-center">Find Us</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+          <div className="clean-card p-12">
+            <h2 className="text-5xl font-bold text-gray-900 mb-12 text-center readable-text">Find Us</h2>
+            <div className="grid lg:grid-cols-2 gap-12">
               <div>
                 <GlassCard
                   imageSrc="/Le Café images/pexels-pavel-danilyuk-6612573.jpg"
                   title="Location Overview"
                   description="Our cafe is conveniently located in the heart of Long Island, easily accessible by car or public transportation."
-                >
-                </GlassCard>
+                  variant="clean"
+                />
               </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-white drop-shadow-lg">Directions</h3>
-                <div className="text-white/90 drop-shadow-md space-y-2">
-                  <p>• Take the Long Island Expressway (I-495) to exit 52</p>
-                  <p>• Head north on Broadway for 2 miles</p>
-                  <p>• Turn left onto Main Street</p>
-                  <p>• We&apos;re located at 123 Main Street on your right</p>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-6">Directions</h3>
+                  <div className="text-gray-700 readable-text space-y-4 text-lg">
+                    <p className="flex items-start space-x-4">
+                      <span className="text-amber-500 text-xl mt-1">•</span>
+                      <span>Take the Long Island Expressway (I-495) to exit 52</span>
+                    </p>
+                    <p className="flex items-start space-x-4">
+                      <span className="text-amber-500 text-xl mt-1">•</span>
+                      <span>Head north on Broadway for 2 miles</span>
+                    </p>
+                    <p className="flex items-start space-x-4">
+                      <span className="text-amber-500 text-xl mt-1">•</span>
+                      <span>Turn left onto Main Street</span>
+                    </p>
+                    <p className="flex items-start space-x-4">
+                      <span className="text-amber-500 text-xl mt-1">•</span>
+                      <span>We&apos;re located at 123 Main Street on your right</span>
+                    </p>
+                  </div>
                 </div>
-                <div className="mt-6">
-                  <h4 className="text-lg font-semibold text-white mb-2 drop-shadow-lg">Parking</h4>
-                  <p className="text-white/90 drop-shadow-md">Free parking available on-site and street parking nearby.</p>
+                <div>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-4">Parking</h4>
+                  <p className="text-gray-700 readable-text text-lg">Free parking available on-site and street parking nearby.</p>
                 </div>
               </div>
             </div>

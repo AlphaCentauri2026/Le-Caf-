@@ -9,6 +9,7 @@ interface GlassCardProps {
   imageAlt?: string;
   children?: React.ReactNode;
   noBlur?: boolean;
+  variant?: 'default' | 'clean' | 'minimal';
 }
 
 const GlassCard: React.FC<GlassCardProps> = ({
@@ -18,10 +19,54 @@ const GlassCard: React.FC<GlassCardProps> = ({
   className = "",
   imageAlt = "",
   children,
-  noBlur = false
+  noBlur = false,
+  variant = 'default'
 }) => {
+  const getCardClasses = () => {
+    if (variant === 'clean') {
+      return "clean-card card-hover-effect";
+    }
+    return `group relative overflow-hidden rounded-xl ${noBlur ? 'bg-white/10 border border-white/20' : 'backdrop-blur-md bg-white/10 border border-white/20'} shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105`;
+  };
+
+  if (variant === 'clean') {
+    return (
+      <div className={`${getCardClasses()} ${className}`}>
+        {imageSrc && (
+          <div className="relative h-56 overflow-hidden rounded-t-2xl">
+            <Image
+              src={imageSrc}
+              alt={imageAlt || title || 'Image'}
+              fill
+              className="object-cover transition-transform duration-700 hover:scale-105"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        )}
+
+        <div className="p-8">
+          {title && (
+            <h3 className="text-2xl font-bold text-gray-900 mb-3 readable-text">
+              {title}
+            </h3>
+          )}
+          {description && (
+            <p className="text-gray-700 mb-6 readable-text leading-relaxed">
+              {description}
+            </p>
+          )}
+          {children && (
+            <div>
+              {children}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className={`group relative overflow-hidden rounded-xl ${noBlur ? 'bg-white/10 border border-white/20' : 'backdrop-blur-md bg-white/10 border border-white/20'} shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 ${className}`}>
+    <div className={`${getCardClasses()} ${className}`}>
       {imageSrc && (
         <div className="relative h-48 md:h-64 overflow-hidden">
           <Image
