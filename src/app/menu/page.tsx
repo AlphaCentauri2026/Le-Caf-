@@ -2,6 +2,7 @@ import React from 'react';
 import menuData from '../../data/menu.json';
 import GlassCard from '../../components/GlassCard';
 import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 
 const MenuPage = () => {
   // Map menu items to appropriate images
@@ -71,6 +72,8 @@ const MenuPage = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

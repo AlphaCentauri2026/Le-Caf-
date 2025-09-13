@@ -1,6 +1,7 @@
 import React from 'react';
 import Gallery from '../../components/Gallery';
 import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 
 const GalleryPage = () => {
   return (
@@ -19,6 +20,8 @@ const GalleryPage = () => {
 
       {/* Gallery Content */}
       <Gallery />
+
+      <Footer />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import companyData from '../../data/company.json';
 import GlassCard from '../../components/GlassCard';
 import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 
 const ContactPage = () => {
   return (
@@ -156,6 +157,8 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

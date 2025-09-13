@@ -1,6 +1,7 @@
 import React from 'react';
 import Testimonials from '../../components/Testimonials';
 import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 
 const TestimonialsPage = () => {
   return (
@@ -19,6 +20,8 @@ const TestimonialsPage = () => {
 
       {/* Testimonials Content */}
       <Testimonials />
+
+      <Footer />
     </div>
   );
 };
