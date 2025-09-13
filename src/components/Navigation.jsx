@@ -51,6 +51,18 @@ const Navigation = () => {
                 About
               </Link>
               <Link
+                href="/gallery"
+                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-lg font-bold transition-all duration-300 hover:bg-white/10 hover:scale-105"
+              >
+                Gallery
+              </Link>
+              <Link
+                href="/testimonials"
+                className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-lg font-bold transition-all duration-300 hover:bg-white/10 hover:scale-105"
+              >
+                Testimonials
+              </Link>
+              <Link
                 href="/contact"
                 className="text-white/90 hover:text-amber-400 px-3 py-2 rounded-md text-lg font-bold transition-all duration-300 hover:bg-white/10 hover:scale-105"
               >
@@ -136,6 +148,20 @@ const Navigation = () => {
             onClick={closeMenu}
           >
             About
+          </Link>
+          <Link
+            href="/gallery"
+            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-xl font-bold transition-all duration-300 hover:bg-white/10"
+            onClick={closeMenu}
+          >
+            Gallery
+          </Link>
+          <Link
+            href="/testimonials"
+            className="text-white/90 hover:text-amber-400 block px-3 py-2 rounded-md text-xl font-bold transition-all duration-300 hover:bg-white/10"
+            onClick={closeMenu}
+          >
+            Testimonials
           </Link>
           <Link
             href="/contact"
