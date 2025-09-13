@@ -13,8 +13,8 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/Le Café images/pexels-igor-haritanovich-814387-1695052.jpg"
-            alt="Cozy cafe interior with warm lighting"
+            src="/Le Café images/pexels-orlovamaria-4946715.jpg"
+            alt="Premium roasted coffee beans"
             fill
             className="object-cover"
           />
